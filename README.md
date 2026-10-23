@@ -1,50 +1,46 @@
 # CareerConnect 💼
 
-### A Python-Based Job Portal Web Application
+### The Job Portal System
 
-CareerConnect is a modern, responsive, Python-based job portal designed to connect candidates with recruiters through a streamlined hiring process. Built using **Python, Streamlit, and SQLite**, it provides separate dashboards for candidates and recruiters, supporting job discovery, recruitment management, and application tracking.
+CareerConnect is a Python-based job portal web application designed to connect candidates with recruiters. Built using Python, Streamlit, and SQLite, it provides dedicated dashboards for job discovery, recruitment management, and application tracking.
 
 ## ✨ Key Features
 
-* **Role-Based Access Control:** Dedicated dashboards for candidates and recruiters with separate workflows.
-* **Smart Job Discovery:** Search, filter, and sort job listings by location and required skills, with backend duplicate-posting checks.
-* **Automated Eligibility Checker:** Calculates a skill-match percentage between candidate skills and job requirements.
-* **Resume Upload:** Supports PDF and DOCX resume uploads during the application process.
-* **Application Tracking:** Enables candidates to monitor application statuses and recruiters to review, shortlist, and manage applicants.
-* **Recruitment Management:** Allows recruiters to create job postings, specify required skills, and update application statuses.
-* **Secure Authentication:** Uses bcrypt password hashing and Streamlit Session State for login-session management.
-* **Modular Architecture:** Separates user interface components, business logic, and database operations for maintainability.
+* **Role-Based Access:** Separate dashboards for candidates and recruiters.
+* **Smart Job Discovery:** Filter and sort job listings by location and skills.
+* **Eligibility Checker:** Calculates a skill-match percentage between candidate skills and job requirements.
+* **Resume Upload:** Supports PDF and DOCX resumes.
+* **Application Tracking:** Enables candidates to monitor application status.
+* **Recruitment Management:** Allows recruiters to post jobs, review applications, and update candidate statuses.
+* **Password Security:** Uses bcrypt for password hashing.
+* **Modular Architecture:** Separates UI components and backend business logic.
 
 ## 🛠️ Technology Stack
 
-| Component                | Technology              |
-| ------------------------ | ----------------------- |
-| Programming Language     | Python 3.9+             |
-| Frontend & Web Framework | Streamlit               |
-| UI Customization         | CSS                     |
-| Database                 | SQLite                  |
-| Database Operations      | Python `sqlite3`        |
-| Authentication           | bcrypt                  |
-| Session Management       | Streamlit Session State |
-| File Handling            | `os`, `pathlib`         |
-| Image Processing         | Pillow (PIL)            |
-| Resume Formats           | PDF, DOCX               |
+| Component            | Technology              |
+| -------------------- | ----------------------- |
+| Programming Language | Python                  |
+| Frontend Framework   | Streamlit               |
+| UI Styling           | Custom CSS              |
+| Database             | SQLite                  |
+| Database Operations  | sqlite3                 |
+| Authentication       | bcrypt                  |
+| Session Management   | Streamlit Session State |
+| File Handling        | os, pathlib             |
+| Image Processing     | Pillow (PIL)            |
 
 ## 📂 Project Structure
 
 ```text
 CareerConnect/
-│
 ├── app.py
 ├── requirements.txt
 ├── careerconnect.db
-│
 ├── ui/
 │   ├── login_page.py
 │   ├── candidate_dashboard.py
 │   ├── recruiter_dashboard.py
 │   └── logo.png
-│
 └── modules/
     ├── user_management.py
     ├── job_management.py
@@ -53,34 +49,28 @@ CareerConnect/
     └── resume_management.py
 ```
 
-### Module Description
+## 🧩 Module Description
 
-| File                        | Responsibility                                                |
-| --------------------------- | ------------------------------------------------------------- |
-| `app.py`                    | Application entry point and global styling                    |
-| `login_page.py`             | User authentication and registration interface                |
-| `candidate_dashboard.py`    | Job browsing, eligibility checking, and application tracking  |
-| `recruiter_dashboard.py`    | Job posting and applicant management                          |
-| `user_management.py`        | User registration and authentication logic                    |
-| `job_management.py`         | Creating, retrieving, and managing job postings               |
-| `application_management.py` | Job applications and status updates                           |
-| `eligibility_checker.py`    | Candidate-job skill matching algorithm                        |
-| `resume_management.py`      | Resume upload and file storage                                |
-| `requirements.txt`          | Python package dependencies                                   |
-| `careerconnect.db`          | SQLite database, generated by the application when configured |
+| Module                      | Responsibility                             |
+| --------------------------- | ------------------------------------------ |
+| `app.py`                    | Application entry point and global styling |
+| `login_page.py`             | Login and registration interface           |
+| `candidate_dashboard.py`    | Job browsing and application tracking      |
+| `recruiter_dashboard.py`    | Job posting and applicant management       |
+| `user_management.py`        | User registration and authentication       |
+| `job_management.py`         | Job posting operations                     |
+| `application_management.py` | Application processing and status updates  |
+| `eligibility_checker.py`    | Candidate-job skill matching               |
+| `resume_management.py`      | Resume upload and file storage             |
 
 ## 🚀 Installation and Setup
-
-Follow these steps to run CareerConnect locally.
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/CareerConnect.git
-cd CareerConnect
+git clone https://github.com/Mallikharjuna-Rao-Potla/CareerConnect-The-Job-Portal-System.git
+cd CareerConnect-The-Job-Portal-System
 ```
-
-Replace `yourusername` with your actual GitHub username.
 
 ### 2. Create a Virtual Environment
 
@@ -88,23 +78,13 @@ Replace `yourusername` with your actual GitHub username.
 python -m venv venv
 ```
 
-Activate the environment.
+Activate it on Windows:
 
-**Windows:**
-
-```bash
+```powershell
 venv\Scripts\activate
 ```
 
-**Linux/macOS:**
-
-```bash
-source venv/bin/activate
-```
-
 ### 3. Install Dependencies
-
-Make sure `requirements.txt` is available in the project root.
 
 ```bash
 pip install -r requirements.txt
@@ -116,86 +96,65 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-### 5. Open in Your Browser
-
-Navigate to:
+Open the following address in your browser:
 
 ```text
 http://localhost:8501
 ```
 
-The CareerConnect application should now be accessible locally.
-
 ## 💡 How to Use
 
-### 👤 For Candidates
+### Candidates
 
-1. Register for an account using the Candidate role.
-2. Log in to access the candidate dashboard.
-3. Browse available job opportunities.
-4. Filter listings by location and skills.
-5. Check the skill-match percentage for relevant positions.
-6. Upload a resume in PDF or DOCX format when applying.
-7. Track application progress through the dashboard.
+1. Register with the Candidate role.
+2. Log in to the candidate dashboard.
+3. Browse and filter available jobs.
+4. Check the skill-match percentage.
+5. Upload a resume and apply for suitable positions.
+6. Track application progress.
 
-### 🏢 For Recruiters
+### Recruiters
 
-1. Register for an account using the Recruiter role.
-2. Log in to access the recruiter dashboard.
+1. Register with the Recruiter role.
+2. Log in to the recruiter dashboard.
 3. Create job postings and specify required skills.
-4. Review incoming candidate applications.
-5. Evaluate candidate profiles and uploaded resumes.
-6. Update application statuses, such as Under Review, Shortlisted, or Selected.
+4. Review applications and candidate resumes.
+5. Update application statuses, such as Under Review, Shortlisted, or Selected.
 
-## 🧠 Core Python Concepts Demonstrated
+## 🧠 Python Concepts Demonstrated
 
-CareerConnect demonstrates practical Python programming concepts through a functional web application.
-
-* **Modular Programming:** Organizes application functionality into reusable Python modules.
-* **Object-Oriented Programming:** Can be used to structure application components and related operations where appropriate.
-* **Functions and Conditional Logic:** Implements authentication, job filtering, eligibility calculations, and application workflows.
-* **Data Structures:** Uses dictionaries, lists, and other Python structures to process application data.
-* **Database Integration:** Uses `sqlite3` to perform relational database operations.
-* **Exception Handling:** Supports controlled handling of database and file-processing errors when implemented.
-* **File Handling:** Manages uploaded resumes using Python file-system utilities.
-* **Third-Party Libraries:** Integrates Streamlit, bcrypt, and Pillow.
-* **Session State Management:** Maintains user-specific session information across Streamlit interactions.
+* **Modular Programming:** Organizing code into reusable modules.
+* **Functions and Conditional Logic:** Implementing application workflows.
+* **Data Structures:** Processing user, job, and application data.
+* **Database Integration:** Performing database operations using SQLite.
+* **File Handling:** Managing uploaded resumes.
+* **Exception Handling:** Handling errors where implemented.
+* **Session Management:** Maintaining user-specific session information.
+* **Third-Party Libraries:** Integrating Streamlit, bcrypt, and Pillow.
 
 ## 🔒 Security Considerations
 
-* Passwords should be stored as bcrypt hashes rather than plain text.
-* User roles and permissions should be validated before performing restricted operations.
-* Uploaded files should be validated for file type and size.
-* File paths should be controlled to prevent unauthorized file access.
-* Database queries should use parameterized statements to reduce SQL injection risks.
-* Production deployments should include appropriate authorization checks and secure file-storage practices.
-
-**Note:** These are security requirements and best practices; their actual enforcement depends on the implementation.
+The application should validate user permissions, uploaded file types, and file sizes. Database queries should use parameterized statements, and sensitive information should be handled securely. Actual security depends on the implementation.
 
 ## 🔮 Future Enhancements
 
-* Email notifications for application status changes.
-* Advanced job recommendations based on skills and experience.
-* Resume parsing and automated skill extraction.
-* Recruiter analytics and hiring dashboards.
-* Deployment to a cloud hosting platform.
-* Integration with external job listing APIs.
+* AI-based job recommendations.
+* Automated resume parsing and skill extraction.
+* Email notifications for application updates.
+* Recruitment analytics and reporting.
+* Cloud deployment.
+* External job listing API integration.
 
 ## 🎯 Project Objective
 
-The primary objective of CareerConnect is to build a functional job portal using Python that demonstrates modular programming, database connectivity, authentication, file handling, business logic, and web application development.
+CareerConnect demonstrates how Python can be used to develop a modular web application with database integration, authentication, file handling, and business logic while addressing practical challenges in recruitment and job discovery.
 
-The project provides practical experience in developing an end-to-end application while addressing common challenges in job discovery and recruitment management.
+## 👨‍💻 Project Team
 
-## 👨‍💻 Author
-
-**Potla Mallikharjuna Rao**
-**Doguparthi Gopichand**
-**Yalavarthi Poorneswar**
-**Gaddhaguti Dhana Chandra Shekar**
-
-GitHub: [Mallikharjuna-Rao-Potla](https://github.com/Mallikharjuna-Rao-Potla)
-GitHub: [Poorneswar-Yalavarthi](https://github.com/Poorneswar999)
+* **Potla Mallikharjuna Rao** — [GitHub](https://github.com/Mallikharjuna-Rao-Potla)
+* **Doguparthi Gopichand**
+* **Yalavarthi Poorneswar** — [GitHub](https://github.com/Poorneswar999)
+* **Gaddhaguti Dhana Chandra Shekar**
 
 ---
 
