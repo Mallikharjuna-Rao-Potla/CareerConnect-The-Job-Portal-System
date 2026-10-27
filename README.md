@@ -1,8 +1,10 @@
-# CareerConnect 💼
+# CareerConnect 💼 
 
 ### The Job Portal System
 
 CareerConnect is a Python-based job portal web application designed to connect candidates with recruiters. Built using Python, Streamlit, and SQLite, it provides dedicated dashboards for job discovery, recruitment management, and application tracking.
+
+### Live Demo: [Click here to access CareerConnect](https://careerconnect-the-job-app-system-6izavwdz5mftrvbjlmhtig.streamlit.app/)
 
 ## ✨ Key Features
 
@@ -152,7 +154,7 @@ CareerConnect demonstrates how Python can be used to develop a modular web appli
 ## 👨‍💻 Project Team
 
 * **Potla Mallikharjuna Rao** — [GitHub](https://github.com/Mallikharjuna-Rao-Potla)
-* **Doguparthi Gopichand**
+* **Doguparthi Gopichand** - [GitHub](https://github.com/Gopichand-Doguparthi)
 * **Yalavarthi Poorneswar** — [GitHub](https://github.com/Poorneswar999)
 * **Gaddhaguti Dhana Chandra Shekar**
 
